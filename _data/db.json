@@ -1,0 +1,84 @@
+{
+    "menu": [
+        {
+            "id": 1, 
+            "name": "Dashboard", 
+            "time": "20 mins",
+            "image": "pexels-bekir-umut-vural-16111855.jpg", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi. Dolorum consectetur enim, voluptas libero eaque dolore itaque consequuntur est laborum nihil debitis!", 
+            "isDefault": false
+        },
+        {
+            "id": 2, 
+            "name": "CRM", 
+            "time": "18 mins",
+            "image": "pexels-chevanon-photography-302899.jpg",  
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+            "isDefault": true
+        },
+        {
+            "id": 3, 
+            "name": "HRM", 
+            "time": "15 mins", 
+            "image": "pexels-harry-dona-2338407.jpg", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi.", 
+            "isDefault": false
+        },
+        {
+            "id": 4, 
+            "name": "Due Manager", 
+            "time": "10 mins", 
+            "image": "pexels-lukas-616354s.jpg", 
+            "description": "Dolorum consectetur enim, voluptas libero eaque dolore itaque consequuntur est laborum nihil debitis!", 
+            "isDefault": true
+        },
+        {
+            "id": 5, 
+            "name": "Purchase", 
+            "time": "10 mins", 
+            "image": "pexels-mareefe-1638280.jpg", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi.", 
+            "isDefault": false
+        },
+        {
+            "id": 6, 
+            "name": "Sale", 
+            "time": "20 mins", 
+            "image": "pexels-muffin-creatives-1653877.jpg", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi. Dolorum consectetur enim, voluptas libero eaque dolore itaque consequuntur est laborum nihil debitis!", 
+            "isDefault": true
+        },
+        {
+            "id": 7, 
+            "name": "Contact", 
+            "time": "25 mins",
+            "image": "pexels-pixabay-461382.jpg",  
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi.", 
+            "isDefault": false
+        },
+        {
+            "id": 8, 
+            "name": "Settings", 
+            "time": "15 mins", 
+            "image": "pexels-polina-tankilevitch-4109910.jpg", 
+            "description": "Dolorum consectetur enim, voluptas libero eaque dolore itaque consequuntur est laborum nihil debitis!", 
+            "isDefault": true
+        },
+        {
+            "id": 9, 
+            "name": "Ledger", 
+            "time": "15 mins", 
+            "image": "pexels-robin-stickel-70497.jpg", 
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus culpa quae asperiores debitis perspiciatis itaque commodi.", 
+            "isDefault": false
+        },
+        {
+            "id": 10, 
+            "name": "Product", 
+            "time": "20 mins", 
+            "image": "pexels-samer-d-2233729.jpg", 
+            "description": "Dolorum consectetur enim, voluptas libero eaque dolore itaque consequuntur est laborum nihil debitis!", 
+            "isDefault": true
+        }
+    ]
+}
