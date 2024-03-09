@@ -25,7 +25,9 @@ export default async function Home() {
   const menus = await getMenus()
 
   return (
-    <main>
+    <main className='container py-24'>
+      <h2 className="text-5xl mb-16">Card design</h2>
+
       <div className="grid grid-cols-3 gap-8">
         {menus.map(menu => (
           <Card key={menu.id} className="flex flex-col justify-between">
