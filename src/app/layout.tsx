@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={`overflow-y-h scrollbar ${inter.className}`}>
 				<StoreProvider>{children}</StoreProvider>
 				<Toaster />
 			</body>
