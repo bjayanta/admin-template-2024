@@ -1,3 +1,4 @@
+import AreaChartComponent from '@/components/AreaChartComponent';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -9,6 +10,15 @@ export default function page() {
 	return (
 		<section className='px-4'>
 			<h2>This is dashboard page.</h2>
+
+			<div className='grid grid-cols-3 gap-4'>
+				<div className='h-80'>
+					<AreaChartComponent />
+				</div>
+				
+				<AreaChartComponent />
+				<AreaChartComponent />
+			</div>
 
 			<div className='w-full h-screen bg-red-100'>
 				<div className='max-w-80 w-full h-28 border bg-yellow-600'></div>

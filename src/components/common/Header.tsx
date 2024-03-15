@@ -50,7 +50,7 @@ export default function Header() {
 
     return (
         <nav className='sticky top-0 border-b'>
-            <div className='flex justify-between gap-2 px-4 py-3 bg-slate-100'>
+            <div className='flex justify-between gap-2 px-4 py-3 bg-slate-100 z-20'>
                 <div className='max-w-2xl w-full'>
                     <form className='relative'>
                         <Search className='absolute top-0 bottom-0 left-3 my-auto text-gray-500' size={20} />

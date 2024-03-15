@@ -55,7 +55,7 @@ export function CommandDialogBar() {
         <CommandDialog open={open} onOpenChange={setOpen}>
             <CommandInput placeholder="Type a command or search..." />
 
-            <CommandList>
+            <CommandList className="scrollbar">
                 <CommandEmpty>No results found.</CommandEmpty>
 
                 {commands.map((command: any, key: number) => (
