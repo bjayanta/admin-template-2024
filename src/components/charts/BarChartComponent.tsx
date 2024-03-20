@@ -1,7 +1,8 @@
 'use client'
 
-import { AreaChart, Area, ResponsiveContainer } from "recharts";
 import React from 'react'
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip } from 'recharts'
+
 
 const data = [
     { "name": "Page A", "uv": 4000, "pv": 2400, "amt": 2400 },
@@ -13,20 +14,21 @@ const data = [
     { "name": "Page G", "uv": 3490, "pv": 4300, "amt": 2100 }
 ]
 
-export default function AreaChartComponent() {
-    
+export default function BarChartComponent() {
     return (
         <ResponsiveContainer width="100%" height="100%">
-            <AreaChart 
-                width={500} 
-                height={400} 
-                data={data}
+            <BarChart
+                data={data} 
+                margin={{top: 0, right: 0, left: 0, bottom: 0,}}
+                barSize={10}
             >
-				<Area type="monotone" dataKey="uv" stroke="#8884d8" />
-                <Area type="monotone" dataKey="pv" stroke="#82ca9d" />
-				<Area type="monotone" dataKey="amt" stroke="#fa25a2" fill="#8884d8" />
-            </AreaChart>
+                {/* <CartesianGrid strokeDasharray="3 3" /> */}
+                <Tooltip />
 
+                <Bar dataKey="pv" fill="#8884d8" />
+                <Bar dataKey="uv" fill="#82ca9d" />
+                <Bar dataKey="amt" fill="#fa2ba1" />
+            </BarChart>
         </ResponsiveContainer>
     )
 }

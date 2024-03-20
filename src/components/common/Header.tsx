@@ -21,6 +21,7 @@ import {
     BookUser, 
     Fingerprint, 
     HelpCircle, 
+    ImageUp, 
     LayoutGrid, 
     LogOut, 
     Menu, 
@@ -49,7 +50,9 @@ export default function Header() {
     ]);
 
     return (
-        <nav className='sticky top-0 border-b'>
+        <nav className='sticky top-0 border-b z-10'>
+
+            {/* For Desktop */}
             <div className='flex justify-between gap-2 px-4 py-3 bg-slate-100 z-20'>
                 <div className='max-w-2xl w-full'>
                     <form className='relative'>
@@ -57,8 +60,7 @@ export default function Header() {
                         <Input className='rounded-lg ps-10' placeholder='Type a command or search ...' />
                     </form>
                 </div>
-
-                {/* Account */}
+                
                 <div>
                     <Button 
                         variant='outline' 
@@ -132,16 +134,23 @@ export default function Header() {
                                 <DropdownMenuSeparator />
 
                                 <DropdownMenuItem>
-                                    <Link href='/home' className='flex items-center space-x-2'>
+                                    <Link href='/user' className='flex items-center space-x-2'>
                                         <BookUser size={20} />
                                         <span>My Account</span>
                                     </Link>
                                 </DropdownMenuItem>
 
                                 <DropdownMenuItem>
-                                    <Link href='/' className='flex items-center space-x-2'>
+                                    <Link href='/user/change-password' className='flex items-center space-x-2'>
                                         <Fingerprint size={20} />
-                                        <span>Chage Password</span>
+                                        <span>Change Password</span>
+                                    </Link>
+                                </DropdownMenuItem>
+
+                                <DropdownMenuItem>
+                                    <Link href='/user/change-avatar' className='flex items-center space-x-2'>
+                                        <ImageUp size={20} />
+                                        <span>Change Avatar</span>
                                     </Link>
                                 </DropdownMenuItem>
 
@@ -195,7 +204,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-
+            
+            {/* For mobile device */}
             <div 
                 className={cn(
                     'fixed left-6 right-0 border-b transition transform -z-50 md:hidden', 
@@ -213,8 +223,8 @@ export default function Header() {
                             </AccordionTrigger>
 
                             <AccordionContent className='flex flex-col gap-3 pt-2 px-8'>
-                                <Link href='/home' className='hover:text-primary'>My Account</Link>
-                                <Link href='/home' className='hover:text-primary'>Profile</Link>
+                                <Link href='/user' className='hover:text-primary'>My Account</Link>
+                                <Link href='/user' className='hover:text-primary'>Profile</Link>
                                 <Link href='/home' className='hover:text-primary'>Billing</Link>
                                 <Link href='/home' className='hover:text-primary'>Team</Link>
                                 <Link href='/home' className='hover:text-primary'>Subscription</Link>
@@ -259,8 +269,9 @@ export default function Header() {
                             </AccordionTrigger>
 
                             <AccordionContent className='flex flex-col gap-3 pt-2 px-8'>
-                                <Link href='/home' className='hover:text-primary'>My Account</Link>
-                                <Link href='/home' className='hover:text-primary'>Chage Password</Link>
+                                <Link href='/user' className='hover:text-primary'>My Account</Link>
+                                <Link href='/user/change-password' className='hover:text-primary'>Chage Password</Link>
+                                <Link href='/user/change-avatar' className='hover:text-primary'>Chage Avatar</Link>
                                 <Link href='/home' className='hover:text-primary'>User Manager</Link>
                                 <Link href='/home' className='hover:text-primary'>Sign Out</Link>
                                 <hr className="border-t bg-neutral-200 dark:bg-white/10" />
