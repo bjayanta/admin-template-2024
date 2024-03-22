@@ -20,10 +20,12 @@ export default function ChangePasswordPage() {
         <section className='p-4'>
             <Breadcrumb data={breadcrumbs} />
 
-            <div className='grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-6 py-4'>
-                <UserNav thePage={thePage} />
+            <div className='grid grid-cols-1 gap-y-6 lg:grid-cols-12 lg:gap-6 py-4'>
+                <div className='col-span-3'>
+                    <UserNav thePage={thePage} />
+                </div>
 
-                <div className='col-span-2'>
+                <div className='col-span-9'>
 				    <ChangePasswordForm />
                 </div>
 			</div>

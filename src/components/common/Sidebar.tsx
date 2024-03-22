@@ -192,7 +192,7 @@ export default function Sidebar() {
                             </AccordionItem>
                         </Accordion>
 
-                        <Link href='/home' className='flex items-center space-x-2 hover:text-primary'>
+                        <Link href='/settings' className='flex items-center space-x-2 hover:text-primary'>
                             <Settings size={20} />
                             <span>Settings & Privacy</span>
                         </Link>

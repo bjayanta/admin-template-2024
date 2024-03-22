@@ -171,7 +171,7 @@ export default function Header() {
                                 <DropdownMenuSeparator />
 
                                 <DropdownMenuItem>
-                                    <Link href='/' className='flex items-center space-x-2'>
+                                    <Link href='/settings' className='flex items-center space-x-2'>
                                         <Bolt size={20} />
                                         <span>Settings & Privacy</span>
                                     </Link>
@@ -275,7 +275,7 @@ export default function Header() {
                                 <Link href='/home' className='hover:text-primary'>User Manager</Link>
                                 <Link href='/home' className='hover:text-primary'>Sign Out</Link>
                                 <hr className="border-t bg-neutral-200 dark:bg-white/10" />
-                                <Link href='/home' className='hover:text-primary'>Settings & Privacy</Link>
+                                <Link href='/settings' className='hover:text-primary'>Settings & Privacy</Link>
                                 <hr className="border-t bg-neutral-200 dark:bg-white/10" />
                                 <Link href='/home' className='hover:text-primary'>About</Link>
                                 <Link href='/home' className='hover:text-primary'>Help</Link>
