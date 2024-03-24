@@ -1,6 +1,6 @@
 'use server';
 
-import { resetPasswordSchema, ResetPasswordFormSchemaType } from "@/lib/auth";
+import { resetPasswordSchema, ResetPasswordFormSchemaType } from "@/lib/schemas/auth";
 
 export const resetPasswordAction = async (values: ResetPasswordFormSchemaType) => {
     const result = resetPasswordSchema.safeParse(values);

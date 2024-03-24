@@ -5,7 +5,7 @@ import { Button, buttonVariants } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { toast } from '@/components/ui/use-toast'
-import { ResetPasswordFormSchemaType, resetPasswordSchema } from '@/lib/auth'
+import { ResetPasswordFormSchemaType, resetPasswordSchema } from '@/lib/schemas/auth'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import Link from 'next/link';

@@ -1,6 +1,6 @@
 'use server';
 
-import { forgotPasswordSchema, ForgotPasswordFormSchemaType } from "@/lib/auth";
+import { forgotPasswordSchema, ForgotPasswordFormSchemaType } from "@/lib/schemas/auth";
 
 export const forgotPasswordAction = async (values: ForgotPasswordFormSchemaType) => {
     const result = forgotPasswordSchema.safeParse(values);

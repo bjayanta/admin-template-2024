@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { toast } from '@/components/ui/use-toast';
-import { ImageUploadSchemaType, imageUploadSchemaType } from '@/lib/picture';
+import { ImageUploadSchemaType, imageUploadSchemaType } from '@/lib/schemas/picture';
 import { zodResolver } from '@hookform/resolvers/zod';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';

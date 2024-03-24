@@ -1,6 +1,6 @@
 'use server';
 
-import { LoginFormSchemaType, loginSchema } from "@/lib/auth";
+import { LoginFormSchemaType, loginSchema } from "@/lib/schemas/auth";
 
 export const signInAction = async (values: LoginFormSchemaType) => {
     const result = loginSchema.safeParse(values);

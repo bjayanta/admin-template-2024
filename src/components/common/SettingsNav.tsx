@@ -1,21 +1,15 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
-import { BookUser, Settings } from 'lucide-react'
+import { Bolt, Briefcase, ReceiptText, SunMoon, UserCog } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export default function SettingsNav({ thePage }: {thePage: string}) {
     return (
         <Card>
             <CardHeader>
-                <div className='flex items-center gap-4'>
-                    <Settings size={64} className='text-neutral-800' />
-                    
-                    <div>
-                        <CardTitle>Settings</CardTitle>
-                        <CardDescription>All the settings and policy</CardDescription>
-                    </div>
-                </div>
+                <CardTitle className='text-neutral-800'>Settings & Privacy</CardTitle>
+                <CardDescription>All the settings and privacy policy</CardDescription>
             </CardHeader>
 
             <CardContent className='flex flex-col space-y-2'>
@@ -26,7 +20,7 @@ export default function SettingsNav({ thePage }: {thePage: string}) {
                         thePage === 'basic' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
                     )}
                 >
-                    <BookUser size={20} />
+                    <Bolt size={20} />
                     <span>Basic</span>
                 </Link>
 
@@ -37,8 +31,19 @@ export default function SettingsNav({ thePage }: {thePage: string}) {
                         thePage === 'business' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
                     )}
                 >
-                    <BookUser size={20} />
+                    <Briefcase size={20} />
                     <span>Business</span>
+                </Link>
+
+                <Link 
+                    href='/settings/invoice' 
+                    className={cn(
+                        'px-4 py-2 flex items-center space-x-2 rounded-lg',
+                        thePage === 'invoice' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
+                    )}
+                >
+                    <ReceiptText size={20} />
+                    <span>Invoice</span>
                 </Link>
 
                 <Link 
@@ -48,7 +53,7 @@ export default function SettingsNav({ thePage }: {thePage: string}) {
                         thePage === 'appearance' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
                     )}
                 >
-                    <BookUser size={20} />
+                    <SunMoon size={20} />
                     <span>Appearance</span>
                 </Link>
 
@@ -59,7 +64,7 @@ export default function SettingsNav({ thePage }: {thePage: string}) {
                         thePage === 'policy' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
                     )}
                 >
-                    <BookUser size={20} />
+                    <UserCog size={20} />
                     <span>Policy</span>
                 </Link>
             </CardContent>

@@ -1,11 +1,11 @@
 'use client';
 
 import { forgotPasswordAction } from '@/actions/forgotPasswordAction';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { toast } from '@/components/ui/use-toast'
-import { ForgotPasswordFormSchemaType, forgotPasswordSchema } from '@/lib/auth'
+import { ForgotPasswordFormSchemaType, forgotPasswordSchema } from '@/lib/schemas/auth'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Link from 'next/link';
 import React, { useState, useTransition } from 'react'

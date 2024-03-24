@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { Input } from '@/components/ui/input';
 import { toast } from '@/components/ui/use-toast';
-import { ChangePasswordSchemaType, changePasswordSchema } from '@/lib/auth';
+import { ChangePasswordSchemaType, changePasswordSchema } from '@/lib/schemas/auth';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import React, { useState, useTransition } from 'react'

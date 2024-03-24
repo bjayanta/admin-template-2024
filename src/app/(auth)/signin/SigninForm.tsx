@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input"
 import { useForm } from 'react-hook-form';
 import { EyeIcon, EyeOffIcon } from 'lucide-react';
 import { zodResolver } from "@hookform/resolvers/zod"
-import { LoginFormSchemaType, loginSchema } from '@/lib/auth';
+import { LoginFormSchemaType, loginSchema } from '@/lib/schemas/auth';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
