@@ -1,4 +1,4 @@
-import Breadcrumb from '@/components/common/Breadcrumb'
+import Breadcrumb from '@/components/common/CustomBreadcrumb'
 import UserNav from '@/components/common/UserNav';
 import { Metadata } from 'next';
 import React from 'react'

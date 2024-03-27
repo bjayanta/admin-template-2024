@@ -1,4 +1,4 @@
-import Breadcrumb from '@/components/common/Breadcrumb'
+import Breadcrumb from '@/components/common/CustomBreadcrumb'
 import SettingsHOC from '@/hoc/SettingsHOC'
 import React from 'react'
 import BusinessSettings from './BusinessSettings'

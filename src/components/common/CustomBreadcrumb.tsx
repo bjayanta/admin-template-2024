@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Breadcrumb as BCComponent,
+    Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbList,
@@ -8,14 +8,14 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
-export default function Breadcrumb({ data }: { data: any }) {
+export default function CustomBreadcrumb({ data }: { data: any }) {
     const lastIndex = data.length - 1;
 
     return (
-        <BCComponent>
+        <Breadcrumb>
             <BreadcrumbList>
                 {data && data.map((breadcrumb: any, index: number) => (
-                    <>
+                    <GroupWrapper key={index}>
                         {breadcrumb.url ? (
                             <BreadcrumbItem>
                                 <BreadcrumbLink href={breadcrumb.url}>{ breadcrumb.title }</BreadcrumbLink>
@@ -25,9 +25,17 @@ export default function Breadcrumb({ data }: { data: any }) {
                         )}
 
                         {lastIndex !== index ? <BreadcrumbSeparator /> : ''}
-                    </>
+                    </GroupWrapper>
                 ))}
             </BreadcrumbList>
-        </BCComponent>
+        </Breadcrumb>
     )
 }
+
+export function GroupWrapper({ children } : { children : any }) {
+    return <>
+        { children }
+    </>
+}
+
+

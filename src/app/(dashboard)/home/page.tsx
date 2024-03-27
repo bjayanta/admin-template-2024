@@ -6,7 +6,7 @@ import { ArrowDown, ArrowUp, ArrowUpRightFromSquare, Coins, DollarSign, Shopping
 import VisitorChart from '@/components/charts/VisitorChart';
 import BarChartComponent from '@/components/charts/BarChartComponent';
 import { Button } from '@/components/ui/button';
-import Breadcrumb from '@/components/common/Breadcrumb';
+import Breadcrumb from '@/components/common/CustomBreadcrumb';
 
 
 export const metadata: Metadata = {

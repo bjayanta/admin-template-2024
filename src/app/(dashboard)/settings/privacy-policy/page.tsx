@@ -1,25 +1,25 @@
-import Breadcrumb from '@/components/common/Breadcrumb'
+import Breadcrumb from '@/components/common/CustomBreadcrumb'
 import SettingsHOC from '@/hoc/SettingsHOC'
 import React from 'react'
 import PolicySettings from './PolicySettings'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Policy Settings"
+    title: "Privacy policy Settings"
 };
 
 export default function page() {
     const breadcrumbs = [
 		{title: 'Project name', url : '/home'},
 		{title: 'Settings', url : '/settings'},
-		{title: 'Policy', url : null},
+		{title: 'Privacy policy', url : null},
 	]
 
     return (
         <section className='p-4'>
             <Breadcrumb data={breadcrumbs} />
 
-            <SettingsHOC thePage='policy'>
+            <SettingsHOC thePage='privacy-policy'>
                 <PolicySettings />
             </SettingsHOC>
         </section>

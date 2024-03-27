@@ -1,4 +1,4 @@
-import Breadcrumb from '@/components/common/Breadcrumb'
+import Breadcrumb from '@/components/common/CustomBreadcrumb'
 import React from 'react'
 import ChangePasswordForm from '@/app/(dashboard)/user/change-password/ChangePasswordForm'
 import UserNav from '@/components/common/UserNav'

@@ -58,14 +58,14 @@ export default function SettingsNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/settings/policy' 
+                    href='/settings/privacy-policy' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
-                        thePage === 'policy' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
+                        thePage === 'privacy-policy' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
                     )}
                 >
                     <UserCog size={20} />
-                    <span>Policy</span>
+                    <span>Privacy policy</span>
                 </Link>
             </CardContent>
         </Card>
