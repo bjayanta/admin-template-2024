@@ -134,28 +134,28 @@ export default function Header() {
                                 <DropdownMenuSeparator />
 
                                 <DropdownMenuItem>
-                                    <Link href='/user' className='flex items-center space-x-2'>
+                                    <Link href='/profile' className='flex items-center space-x-2'>
                                         <BookUser size={20} />
                                         <span>My Account</span>
                                     </Link>
                                 </DropdownMenuItem>
 
                                 <DropdownMenuItem>
-                                    <Link href='/user/change-password' className='flex items-center space-x-2'>
+                                    <Link href='/profile/change-password' className='flex items-center space-x-2'>
                                         <Fingerprint size={20} />
                                         <span>Change Password</span>
                                     </Link>
                                 </DropdownMenuItem>
 
                                 <DropdownMenuItem>
-                                    <Link href='/user/change-avatar' className='flex items-center space-x-2'>
+                                    <Link href='/profile/change-avatar' className='flex items-center space-x-2'>
                                         <ImageUp size={20} />
                                         <span>Change Avatar</span>
                                     </Link>
                                 </DropdownMenuItem>
 
                                 <DropdownMenuItem>
-                                    <Link href='/' className='flex items-center space-x-2'>
+                                    <Link href='/users' className='flex items-center space-x-2'>
                                         <UsersRound size={20} />
                                         <span>User Manager</span>
                                     </Link>
@@ -269,10 +269,10 @@ export default function Header() {
                             </AccordionTrigger>
 
                             <AccordionContent className='flex flex-col gap-3 pt-2 px-8'>
-                                <Link href='/user' className='hover:text-primary'>My Account</Link>
-                                <Link href='/user/change-password' className='hover:text-primary'>Chage Password</Link>
-                                <Link href='/user/change-avatar' className='hover:text-primary'>Chage Avatar</Link>
-                                <Link href='/home' className='hover:text-primary'>User Manager</Link>
+                                <Link href='/profile' className='hover:text-primary'>My Account</Link>
+                                <Link href='/profile/change-password' className='hover:text-primary'>Chage Password</Link>
+                                <Link href='/profile/change-avatar' className='hover:text-primary'>Chage Avatar</Link>
+                                <Link href='/users' className='hover:text-primary'>User Manager</Link>
                                 <Link href='/home' className='hover:text-primary'>Sign Out</Link>
                                 <hr className="border-t bg-neutral-200 dark:bg-white/10" />
                                 <Link href='/settings' className='hover:text-primary'>Settings & Privacy</Link>

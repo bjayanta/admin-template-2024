@@ -23,7 +23,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
 
             <CardContent className='flex flex-col space-y-2'>
                 <Link 
-                    href='/user' 
+                    href='/profile' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'my-account' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -34,7 +34,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/change-password' 
+                    href='/profile/change-password' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'change-password' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -45,7 +45,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/change-avatar' 
+                    href='/profile/change-avatar' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'change-avatar' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -56,7 +56,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/notifications' 
+                    href='/profile/notifications' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'notifications' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -67,7 +67,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/security' 
+                    href='/profile/security' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'security' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -78,7 +78,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/apps' 
+                    href='/profile/apps' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'apps' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'
@@ -89,7 +89,7 @@ export default function UserNav({ thePage }: {thePage: string}) {
                 </Link>
 
                 <Link 
-                    href='/user/privacy' 
+                    href='/profile/privacy' 
                     className={cn(
                         'px-4 py-2 flex items-center space-x-2 rounded-lg',
                         thePage === 'privacy' ? 'bg-primary text-white' : 'text-slate-500 hover:bg-neutral-100'

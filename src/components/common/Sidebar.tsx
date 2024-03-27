@@ -171,7 +171,7 @@ export default function Sidebar() {
                     <h2 className='text-xs font-semibold uppercase tracking-wider mb-4'>Company</h2>
 
                     <div className='flex flex-col space-y-2 text-gray-800'>
-                        <Link href='/home' className='flex items-center space-x-2 hover:text-primary'>
+                        <Link href='/users' className='flex items-center space-x-2 hover:text-primary'>
                             <Users size={20} />
                             <span>Users</span>
                         </Link>

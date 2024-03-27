@@ -1,21 +1,20 @@
 import Breadcrumb from '@/components/common/CustomBreadcrumb'
-import UserNav from '@/components/common/UserNav';
-import { Metadata } from 'next';
 import React from 'react'
-import ProfileForm from '@/app/(dashboard)/user/ProfileForm';
-
+import ChangePasswordForm from '@/app/(dashboard)/profile/change-password/ChangePasswordForm'
+import UserNav from '@/components/common/UserNav'
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "My Account"
+    title: "Change password"
 };
 
-export default function User() {
+export default function ChangePasswordPage() {
     const breadcrumbs = [
 		{title: 'User', url : '/user'},
-		{title: 'My Account', url : null},
+		{title: 'Change Password', url : null},
 	]
 
-    const thePage: string = 'my-account'
+    const thePage: string = 'change-password'
 
     return (
         <section className='p-4'>
@@ -27,7 +26,7 @@ export default function User() {
                 </div>
 
                 <div className='col-span-9'>
-				    <ProfileForm />
+				    <ChangePasswordForm />
                 </div>
 			</div>
         </section>

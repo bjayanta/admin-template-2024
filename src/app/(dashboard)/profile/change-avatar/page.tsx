@@ -2,7 +2,7 @@ import Breadcrumb from '@/components/common/CustomBreadcrumb'
 import UserNav from '@/components/common/UserNav';
 import { Metadata } from 'next';
 import React from 'react'
-import UploadAvatar from '@/app/(dashboard)/user/change-avatar/UploadAvatar';
+import UploadAvatar from '@/app/(dashboard)/profile/change-avatar/UploadAvatar';
 
 
 export const metadata: Metadata = {
